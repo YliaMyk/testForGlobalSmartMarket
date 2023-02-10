@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test for Global Smart Market</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form class="form" method="get">
+            <input class="form__input" type="number" name="start" id="inputOne" value="3000" oninput="inputOnlyNumber(this)" onchange="changeInput(this)">
+            <input class="form__input" type="number" name="end" id="inputTwo" value="7000" oninput="inputOnlyNumber(this)" onchange="changeInput(this)">
+        </form>
+        <div class="slider">
+            <div class="slider__track"></div>
+            <input type="range" min="0" max="10000" value="3000" id="sliderOne" oninput="changeSlider(this)">
+            <input type="range" min="0" max="10000" value="7000" id="sliderTwo" oninput="changeSlider(this)">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
